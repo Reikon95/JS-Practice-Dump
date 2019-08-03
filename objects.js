@@ -49,3 +49,18 @@ robot.numOfSensors = 100;
 console.log(robot.numOfSensors)
 
 // With get and set methods (one returns, one changes)
+
+const robotFactory = (model, mobile) => {
+  return {
+    model: model,
+    mobile: mobile,
+    beep() {
+      console.log('Beep Boop')
+    }
+  }
+}
+
+const tinCan = robotFactory('P-500', true);
+tinCan.beep()
+
+//Factory functions - this creates many instances of an object quickly. This example creates robots based off object params
