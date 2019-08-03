@@ -64,3 +64,21 @@ const tinCan = robotFactory('P-500', true);
 tinCan.beep()
 
 //Factory functions - this creates many instances of an object quickly. This example creates robots based off object params
+
+const robot = {
+  model: '1E78V2',
+  energyLevel: 100,
+  functionality: {
+    beep() {
+      console.log('Beep Boop');
+    },
+    fireLaser() {
+      console.log('Pew Pew');
+    },
+  }
+};
+
+const { functionality } = robot;
+functionality.beep()
+
+// Deconstructed assignment - you can extract a key-value pair as a variable this way
