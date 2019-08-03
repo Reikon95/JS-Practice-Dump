@@ -82,3 +82,27 @@ const { functionality } = robot;
 functionality.beep()
 
 // Deconstructed assignment - you can extract a key-value pair as a variable this way
+
+const robot = {
+	model: 'SAL-1000',
+  mobile: true,
+  sentient: false,
+  armor: 'Steel-plated',
+  energyLevel: 75
+};
+const robotKeys = Object.keys(robot);
+console.log(robotKeys);
+const robotEntries = Object.entries(robot);
+console.log(robotEntries);
+const newRobot = Object.assign({laserBlaster: true, voiceRecognition: true})
+console.log(newRobot);
+//Built in obkect methods. These are ways you can access lists of objects and shorthands -
+// This will print
+//
+// [ 'model', 'mobile', 'sentient', 'armor', 'energyLevel' ]
+// [ [ 'model', 'SAL-1000' ],
+//   [ 'mobile', true ],
+//   [ 'sentient', false ],
+//   [ 'armor', 'Steel-plated' ],
+//   [ 'energyLevel', 75 ] ]
+// { laserBlaster: true, voiceRecognition: true }
