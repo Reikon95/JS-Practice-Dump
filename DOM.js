@@ -20,3 +20,9 @@ function turnButtonRed (){
 }
 
 element.onclick = turnButtonRed;
+
+//get child and parent
+
+let first = document.body.firstChild;
+first.innerHTML = "First child";
+first.parentNode.innerHTML = "I am the parent and my inner HTML has been replaced!";
