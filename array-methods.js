@@ -21,3 +21,8 @@ const greetings = ['hello', 'hi', 'heya', 'oi', 'hey', 'yo'];
 
 console.log(shoutGreetings(greetings))
 //output is [ 'HELLO!', 'HI!', 'HEYA!', 'OI!', 'HEY!', 'YO!' ]
+
+//.find() - returns object
+function findExpensiveFruit(fruits, price) {
+	return fruits.find(fruits => fruits.price >= price);
+}
