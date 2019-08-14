@@ -33,3 +33,11 @@ first.parentNode.innerHTML = "I am the parent and my inner HTML has been replace
 // The .innerHTML and .style properties allow you to modify an element by changing its contents or style respectively
 // You can create, append, and remove elements by using the .createElement(),.appendChild() and .removeChild() methods respectively
 // The .onclick property can add interactivity to a DOM element based on a click event
+
+
+//Make more info appear below
+let readMore = document.getElementById('read-more')
+let moreInfo = document.getElementById('more-info')
+readMore.onclick = function() {
+  moreInfo.style.display = 'block';
+}
