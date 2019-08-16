@@ -41,3 +41,24 @@ let moreInfo = document.getElementById('more-info')
 readMore.onclick = function() {
   moreInfo.style.display = 'block';
 }
+
+
+// Write code for the first list item
+itemOne.onmouseover = function(){
+  itemOne.style.width = '430px';
+};
+
+// Write code for the second list item
+itemTwo.onmouseup = function(){
+  itemTwo.style.backgroundColor = 'green'
+};
+
+// Write code for the third list item
+itemThree.onmouseout = function(){
+  itemThree.innerHTML = 'The mouse has left the element.'
+};
+
+// Write code for the fourth list item
+itemFour.onmousedown = function(){
+  itemFive.style.display = 'block';
+};
