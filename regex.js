@@ -34,3 +34,8 @@ let unRegex = /.un/;
 let result = unRegex.test(exampleStr);
 //The period is a wildcard meaning it will match any character, thus meaning this will match fun, sun, run etc.
 
+//Matching single character with multiple possibilities
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/ig; 
+let result = quoteSample.match(vowelRegex); 
+//This will match to all the vowels, is case insensitive and will still pick up multiple matches.
