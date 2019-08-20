@@ -27,3 +27,10 @@ let twinkleStar = "Twinkle, twinkle, little star";
 let starRegex = /Twinkle/gi; 
 let result = twinkleStar.match(starRegex); 
 //This returns multiple matches. Note that you must use the 'i' flag too for insenstivity. The g flag allows for mmultiple.
+
+//Wildcard matches
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/; 
+let result = unRegex.test(exampleStr);
+//The period is a wildcard meaning it will match any character, thus meaning this will match fun, sun, run etc.
+
