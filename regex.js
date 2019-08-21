@@ -92,3 +92,9 @@ let numString = "Your sandwich will be $5.00";
 let numRegex = /\d/g; 
 let result = numString.match(numRegex).length;
 //d flag
+
+//Match all non numbers
+let numString = "Your sandwich will be $5.00";
+let noNumRegex = /\D/g; 
+let result = numString.match(noNumRegex).length;
+//D flag
