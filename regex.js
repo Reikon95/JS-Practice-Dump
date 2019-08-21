@@ -39,3 +39,16 @@ let quoteSample = "Beware of bugs in the above code; I have only proved it corre
 let vowelRegex = /[aeiou]/ig; 
 let result = quoteSample.match(vowelRegex); 
 //This will match to all the vowels, is case insensitive and will still pick up multiple matches.
+
+//Matching all letters in alphabet
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/ig; 
+let result = quoteSample.match(alphabetRegex); 
+//Returns all the letters because of the insensitive and global flag.
+
+//Matching ranges of numbers and letters
+let quoteSample = "Blueberry 3.141592653s are delicious.";
+let myRegex = /[h-s2-6]/ig; 
+let result = quoteSample.match(myRegex); 
+//Returns all letters from h to s and all numbers between 2 and 6
+
