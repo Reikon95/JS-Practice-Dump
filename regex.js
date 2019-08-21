@@ -133,4 +133,26 @@ let result = timRegex.test(timStr);
 let favWord = "favorite";
 let favRegex = /favou?rite/; 
 let result = favRegex.test(favWord);
-//The ? allows for all or none - in this situation it'd accept either u or nothing at all, handy for the differences between American and British
+//The ? allows for all or none - in this situation it'd accept either u or nothing at all, 
+//handy for the differences between American and British
+
+//Positive and Negative Lookahead
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{5,})(?=\D*\d{2})/; 
+let result = pwRegex.test(sampleWord);
+//This will match passwords that are greater than 5 characters long and have two consecutive digits.
+
+//Reuse patterns
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+)\s\1\s\1$/; 
+let result = repeatNum.match(reRegex);
+// Details = https://guide.freecodecamp.org/certifications/javascript
+//-algorithms-and-data-structures/regular-expressions/reuse-patterns-using-capture-groups/
+
+//Search and replace
+let huhText = "This sandwich is good.";
+let fixRegex = /good/; 
+let replaceText = "okey-dokey"; 
+let result = huhText.replace(fixRegex, replaceText);
+//Pretty easy by comparison. You put in the regex, this is the condition of what you can replace and the replacetext
+//is what you will replace it with.
