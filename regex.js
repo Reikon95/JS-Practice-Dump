@@ -156,3 +156,9 @@ let replaceText = "okey-dokey";
 let result = huhText.replace(fixRegex, replaceText);
 //Pretty easy by comparison. You put in the regex, this is the condition of what you can replace and the replacetext
 //is what you will replace it with.
+
+//Remove whitespace from start and end
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g;
+let result = hello.replace(wsRegex,''); 
+//The .trim() method would work here too... 
