@@ -69,3 +69,15 @@ let text = "<h1>Winter is coming</h1>";
 let myRegex = /<h1>?/; 
 let result = text.match(myRegex);
 //Returns shortest possible substring that fits the pattern
+
+//Matching at the end of a string
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/; 
+let result = lastRegex.test(caboose);
+//The dollar sign indicates it should be at the back
+
+//Match all alphabetic characters
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/gi; 
+let result = quoteSample.match(alphabetRegexV2).length;
+//The \w is shorthand for all alphabetic characters
