@@ -104,3 +104,9 @@ let sample = "Whitespace is important in separating words";
 let countWhiteSpace = /\s/g; 
 let result = sample.match(countWhiteSpace);
 //\s matches all whtiespace in string
+
+//Match all non whitespace
+let sample = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g; 
+let result = sample.match(countNonWhiteSpace);
+//\S matches all non whitespace
