@@ -116,3 +116,10 @@ let ohStr = "Ohhh no";
 let ohRegex = /Oh{3,6}\sno/;
 let result = ohRegex.test(ohStr);
 //Returns strings with between 3-6h's, taking into account whitespace too 
+
+//Specify only lower number of matches
+let haStr = "Hazzzzah";
+let haRegex = /Haz{4,}ah/; // Change this line
+let result = haRegex.test(haStr);
+//Would match the string only when there are 4 or more z's
+
