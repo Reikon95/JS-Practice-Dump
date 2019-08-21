@@ -119,7 +119,18 @@ let result = ohRegex.test(ohStr);
 
 //Specify only lower number of matches
 let haStr = "Hazzzzah";
-let haRegex = /Haz{4,}ah/; // Change this line
+let haRegex = /Haz{4,}ah/; 
 let result = haRegex.test(haStr);
 //Would match the string only when there are 4 or more z's
 
+//Specific number of matches
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/; 
+let result = timRegex.test(timStr);
+//Matches for 4 m's in the string
+
+//Checking for all or none
+let favWord = "favorite";
+let favRegex = /favou?rite/; 
+let result = favRegex.test(favWord);
+//The ? allows for all or none - in this situation it'd accept either u or nothing at all, handy for the differences between American and British
