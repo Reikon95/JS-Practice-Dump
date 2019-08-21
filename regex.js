@@ -98,3 +98,9 @@ let numString = "Your sandwich will be $5.00";
 let noNumRegex = /\D/g; 
 let result = numString.match(noNumRegex).length;
 //D flag
+
+//Match whitespace
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g; 
+let result = sample.match(countWhiteSpace);
+//\s matches all whtiespace in string
