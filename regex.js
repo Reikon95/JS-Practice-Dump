@@ -110,3 +110,9 @@ let sample = "Whitespace is important in separating words";
 let countNonWhiteSpace = /\S/g; 
 let result = sample.match(countNonWhiteSpace);
 //\S matches all non whitespace
+
+//Specify Upper and Lower Number of Matches
+let ohStr = "Ohhh no";
+let ohRegex = /Oh{3,6}\sno/;
+let result = ohRegex.test(ohStr);
+//Returns strings with between 3-6h's, taking into account whitespace too 
