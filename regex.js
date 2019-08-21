@@ -63,3 +63,9 @@ let difficultSpelling = "Mississippi";
 let myRegex = /s+/ig; 
 let result = difficultSpelling.match(myRegex);
 //This will return multiple occurances of the letter s (hence the + sign)
+
+//Lazy matching
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<h1>?/; 
+let result = text.match(myRegex);
+//Returns shortest possible substring that fits the pattern
