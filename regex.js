@@ -52,3 +52,14 @@ let myRegex = /[h-s2-6]/ig;
 let result = quoteSample.match(myRegex); 
 //Returns all letters from h to s and all numbers between 2 and 6
 
+//Match characters EXCEPT characters
+let quoteSample = "3 blind mice.";
+let myRegex = /[^aeiou0-9]/ig; 
+let result = quoteSample.match(myRegex); 
+//The '^' indicates that you should match everything that is NOT one of these. So in this case - no vowels or numbers.
+
+//Multiple matches 
+let difficultSpelling = "Mississippi";
+let myRegex = /s+/ig; 
+let result = difficultSpelling.match(myRegex);
+//This will return multiple occurances of the letter s (hence the + sign)
