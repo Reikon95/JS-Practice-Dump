@@ -76,8 +76,13 @@ let lastRegex = /caboose$/;
 let result = lastRegex.test(caboose);
 //The dollar sign indicates it should be at the back
 
-//Match all alphabetic characters
+//Match all alphanumeric characters
 let quoteSample = "The five boxing wizards jump quickly.";
 let alphabetRegexV2 = /\w/gi; 
 let result = quoteSample.match(alphabetRegexV2).length;
-//The \w is shorthand for all alphabetic characters
+//The \w is shorthand for all alphanumeric characters
+
+//All except allphanumeric
+let quoteSample = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/g; 
+let result = quoteSample.match(nonAlphabetRegex).length;
