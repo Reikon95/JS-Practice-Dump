@@ -35,3 +35,13 @@ const getTea = (prepareTea, numOfCups) => {
 const tea4GreenTeamFCC = getTea(prepareGreenTea, 27); 
 const tea4BlackTeamFCC = getTea(prepareBlackTea, 13); 
 
+// Pass Arguments to Avoid External Dependence in a Function
+// the global variable
+var fixedValue = 4;
+function incrementer (arg) {
+    return arg + 1;
+  }
+
+var newValue = incrementer(fixedValue); // Should equal 5
+console.log(fixedValue); // Should print 4
+//Global variables uneffected 
