@@ -120,3 +120,13 @@ console.log(newRobot);
 // There are different ways to use object destructuring: one way is the property value shorthand and another is destructured assignment.
 // As with any concept, it is a good skill to learn how to use the documentation with objects!
 // You’re ready to start leveraging more elegant code for creating and accessing objects in your code!
+
+function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype.numLegs = 4;
+
+let beagle = new Dog("Snoopy");
+
+console.log(beagle.numLegs);
