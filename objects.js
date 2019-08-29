@@ -138,6 +138,8 @@ function Dog(name) {
 }
 
 Dog.prototype = {
+constructor: Dog,
+
   numLegs: 4,
   eat: function() {
     console.log("monch monch")
