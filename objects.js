@@ -130,3 +130,19 @@ Dog.prototype.numLegs = 4;
 let beagle = new Dog("Snoopy");
 
 console.log(beagle.numLegs);
+
+// Change the Prototype to a New Object
+
+function Dog(name) {
+  this.name = name; 
+}
+
+Dog.prototype = {
+  numLegs: 4,
+  eat: function() {
+    console.log("monch monch")
+  },
+  describe: function() {
+    console.log("My name is " + this.name);
+  }
+};
