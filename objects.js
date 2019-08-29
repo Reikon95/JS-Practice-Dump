@@ -148,3 +148,12 @@ constructor: Dog,
     console.log("My name is " + this.name);
   }
 };
+
+// Check if object  is a prototype of a constructor
+function Dog(name) {
+  this.name = name;
+}
+
+let beagle = new Dog("Snoopy");
+Dog.prototype.isPrototypeOf(beagle);
+//Return true
