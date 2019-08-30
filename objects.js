@@ -157,3 +157,27 @@ function Dog(name) {
 let beagle = new Dog("Snoopy");
 Dog.prototype.isPrototypeOf(beagle);
 //Return true
+
+//Use a Mixin to Add Common Behavior Between Unrelated Objects
+
+let bird = {
+  name: "Donald",
+  numLegs: 2
+};
+
+let boat = {
+  name: "Warrior",
+  type: "race-boat"
+};
+
+let glideMixin = function(obj) {
+  obj.glide = function() {
+   console.log('glide');
+  }
+}
+
+glideMixin(bird);
+glideMixin(boat);
+
+
+//Adds the function to these objects
