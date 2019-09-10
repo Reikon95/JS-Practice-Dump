@@ -162,3 +162,14 @@ let hello = "   Hello, World!  ";
 let wsRegex = /^\s+|\s+$/g;
 let result = hello.replace(wsRegex,''); 
 //The .trim() method would work here too... 
+
+//Regex search and return index + constructor
+function search(str, fob) {
+	let regex = new RegExp(fob, 'gi');
+	if (str.match(regex) === null) {
+		return -1;
+	} else {
+		return str.search(regex);
+	}
+}
+//constructs a regex based off an arg (fob in this case), returns the index if match is not null
