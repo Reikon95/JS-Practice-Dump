@@ -173,3 +173,10 @@ function search(str, fob) {
 	}
 }
 //constructs a regex based off an arg (fob in this case), returns the index if match is not null
+
+//Search and replace
+function replace(sentence, fro, to) {
+	let regex = new RegExp(fro, 'ig');
+	let result = sentence.replace(fro, to);
+	return result;
+}
