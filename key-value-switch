@@ -1,0 +1,7 @@
+function swap(obj) {
+	let newObj = {};
+	for (let i in obj) {
+		newObj[obj[i]] = i; 
+	}
+	return newObj;
+}
